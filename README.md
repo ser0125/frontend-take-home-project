@@ -3,7 +3,7 @@
 ## Intro
 Welcome! and thank you for taking the time to complete the Classkick take-home challenge for our Senior/Staff Frontend Engineer position.
 
-You will have 3 days to complete the project. Once you have completed your solution, please reply with a link to a forked GitHub repository or your folder with any helpful instructions for us.
+You will have 3 days to complete the project and expect to spend < 3 hours on it. Once you have completed your solution, please reply with a link to a forked GitHub repository or your folder with any helpful instructions for us.
 
 ## Motivation
 At Classkick, our teachers and students LOVE using our [Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial) feature to create fun and engaging content.
@@ -29,6 +29,13 @@ Your task is to create a [Canvas](https://developer.mozilla.org/en-US/docs/Web/A
     - Design/Technical decisions
     - Where and how this would hook up to a Backend service eg: Firebase
  - Create components as you feel is best suited for your solution
+
+## Bonus:
+- Appropriate documentation and tests.
+- Make it accessible.
+- Make it production ready.
+
+## Styling Guidelines
 
 
 ## Mocks

@@ -60,7 +60,7 @@ export default function Home() {
           <h2>
             Goals <span>-&gt;</span>
           </h2>
-          <p>Your task is to create a>Canvas element to:<br></br><br></br>
+          <p>Your task is to create Canvas element to:<br></br><br></br>
             - Create a `Drawing` <br></br>
             - Create a `Textbox` <br></br>
             - Add an `Eraser Tool`
