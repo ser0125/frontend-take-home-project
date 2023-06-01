@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Classkick Front End Engineering Take Home Project
 
-## Getting Started
+## Intro
+Welcome! and thank you for taking the time to complete the Classkick take-home challenge for our Senior/Staff Frontend Engineer position.
 
-First, run the development server:
+You will have 3 days to complete the project. Once you have completed your solution, please reply with a link to a GitHub repository and any helpful instructions for us.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Motivation
+At Classkick, our teachers and students LOVE using our [Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial) feature to create fun and engaging content.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project emulates the type of scenarios we face at Classkick, with similar technical challenges regarding UI and real-time UX.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Goal
+Your task is to create a [Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial) element to:
+- Create a `Drawing`
+- Create a `Textbox`
+- Add an `Eraser Tool`. The Eraser UX is left up to your design decisions. Here are 3 examples of how it could function, but you can design your own function as well.
+    - The eraser acts like a smudge eraser.
+    - When a user smudges over a line in eraser mode, that erases the entire line.
+    - When a user points and clicks a line, it erases.
 
-## Learn More
+**[Bonus]**: Add other tools like Colors, Images, or something else!
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Requirements:
+ - Your app does NOT have to be hooked up to a backend and thus it does NOT have to preserve state. 
+ - It should be clear in your code and/or documentation on areas for eg:
+    - Design/Technical decisions
+    - Where and how this would hook up to a Backend service eg: Firebase
+ - Create components as you feel is best suited for your solution
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Mocks
+![Canvas Wireframe](public/classkick-take-home.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Setup Guide
+[SETUP GUIDE](SETUP.md)
+
+
+Good luck and if you have questions, please reach out to us at hiring@classkick.com
+
+

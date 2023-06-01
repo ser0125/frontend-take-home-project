@@ -4,91 +4,108 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <main className={styles.main}>
+
+      <div className={styles.code}>
+        <p>Frontend Engineer Take Home Project</p>
+      </div>
+      
+      <div className={styles.center}>
+        <Image
+          className={styles.logo}
+          src="/classkick.png"
+          alt="Classkick Logo"
+          width={200}
+          height={50}
+          priority
+        />
+      </div>
+
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <br></br>
+
+      <div className={styles.description}>
+        <p>
+          Details of project requirements are at:&nbsp;
+          <code className={styles.code}>README.md</code>
+        </p>
       </div>
+
+      <br></br>
 
       <div className={styles.grid}>
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="/"
           className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2>
-            Docs <span>-&gt;</span>
+            Motivation <span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <p>At Classkick, our teachers and students LOVE using our 
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial"> Canvas </a> 
+            feature to create fun and engaging content. <br></br><br></br>
+            This project emulates the type of scenarios we face at Classkick, with similar technical challenges regarding UI and real-time UX.
           </p>
         </a>
+
+        <a
+          href="/"
+          className={styles.card}
+        >
+          <h2>
+            Goals <span>-&gt;</span>
+          </h2>
+          <p>Your task is to create a>Canvas element to:<br></br><br></br>
+            - Create a `Drawing` <br></br>
+            - Create a `Textbox` <br></br>
+            - Add an `Eraser Tool`
+          </p>
+        </a>
+
+        <a
+          href="/"
+          className={styles.card}
+        >
+          <h2>
+            Requirements <span>-&gt;</span>
+          </h2>
+          <p>
+            - Your app does NOT have to be hooked up to a backend and thus it does NOT have to preserve state. <br></br><br></br>
+            - It should be clear in your code and/or documentation on areas of design and technical decisions <br></br><br></br>
+            - Create components as you feel is best suited for your solution. <br></br>
+          </p>
+        </a>
+
+        <a
+          href="/"
+          className={styles.card}
+        >
+          <h2>
+            Helpful links <span>-&gt;</span>
+          </h2>
+          <p>
+            - <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial"> Canvas API </a><br></br><br></br>
+            - <a href='https://react.dev/learn/start-a-new-react-project#nextjs'>React/Next JS Tutorial</a> <br></br>
+          </p>
+        </a>
+      </div>
+
+      <br></br><br></br>
+      <h3>Mock &nbsp;</h3>
+      <div className={styles.center}>
+        
+        <Image
+          src="/classkick-take-home.png"
+          alt="Classkick Take Home"
+          width={450}
+          height={350}
+          priority
+        />
       </div>
     </main>
   )
