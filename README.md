@@ -27,11 +27,15 @@ Your task is to create a [Canvas](https://developer.mozilla.org/en-US/docs/Web/A
  - Your app does NOT have to be hooked up to a backend and thus it does NOT have to preserve state. 
  - It should be clear in your code and/or documentation on areas for eg:
     - Design/Technical decisions
-    - Where and how this would hook up to a Backend service eg: Firebase
- - Create components as you feel is best suited for your solution
+    - Mocks a virtual API that could be injected to persist all actions on the canvas remotely (eg: Firebase)
+ - Exhibits SOLID design principles, good application architecture, and project organization.
+ - Create components as you feel is best suited for your solution.
+ - Tests!
+
+Just remember: when in doubt, treat this project as though you are about to submit it to your peers for a PR.
+
 
 ## Bonus:
-- Appropriate documentation and tests.
 - Make it accessible.
 - Make it production ready.
 
