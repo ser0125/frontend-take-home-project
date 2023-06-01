@@ -3,7 +3,7 @@
 ## Intro
 Welcome! and thank you for taking the time to complete the Classkick take-home challenge for our Senior/Staff Frontend Engineer position.
 
-You will have 3 days to complete the project. Once you have completed your solution, please reply with a link to a GitHub repository and any helpful instructions for us.
+You will have 3 days to complete the project. Once you have completed your solution, please reply with a link to a forked GitHub repository or your folder with any helpful instructions for us.
 
 ## Motivation
 At Classkick, our teachers and students LOVE using our [Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial) feature to create fun and engaging content.
