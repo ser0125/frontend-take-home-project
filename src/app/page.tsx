@@ -39,10 +39,7 @@ export default function Home() {
       <br></br>
 
       <div className={styles.grid}>
-        <a
-          href="/"
-          className={styles.card}
-        >
+        <div className={styles.card}>
           <h2>
             Motivation <span>-&gt;</span>
           </h2>
@@ -51,12 +48,9 @@ export default function Home() {
             feature to create fun and engaging content. <br></br><br></br>
             This project emulates the type of scenarios we face at Classkick, with similar technical challenges regarding UI and real-time UX.
           </p>
-        </a>
+        </div>
 
-        <a
-          href="/"
-          className={styles.card}
-        >
+        <div className={styles.card}>
           <h2>
             Goals <span>-&gt;</span>
           </h2>
@@ -65,12 +59,9 @@ export default function Home() {
             - Create a `Textbox` <br></br>
             - Add an `Eraser Tool`
           </p>
-        </a>
+        </div>
 
-        <a
-          href="/"
-          className={styles.card}
-        >
+        <div className={styles.card}>
           <h2>
             Requirements <span>-&gt;</span>
           </h2>
@@ -79,12 +70,9 @@ export default function Home() {
             - It should be clear in your code and/or documentation on areas of design and technical decisions <br></br><br></br>
             - Create components as you feel is best suited for your solution. <br></br>
           </p>
-        </a>
+        </div>
 
-        <a
-          href="/"
-          className={styles.card}
-        >
+        <div className={styles.card}>
           <h2>
             Helpful links <span>-&gt;</span>
           </h2>
@@ -92,7 +80,7 @@ export default function Home() {
             - <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial"> Canvas API </a><br></br><br></br>
             - <a href='https://react.dev/learn/start-a-new-react-project#nextjs'>React/Next JS Tutorial</a> <br></br>
           </p>
-        </a>
+        </div>
       </div>
 
       <br></br><br></br>
