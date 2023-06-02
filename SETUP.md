@@ -10,7 +10,13 @@ Ensure node: '>=16.8.0'
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+```
+npm ci
+```
+
+
+Then, run the development server:
 
 ```bash
 npm run dev
