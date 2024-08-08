@@ -1,7 +1,7 @@
-# Classkick Engineering Take Home Project
+# Classkick Front End Engineering Take Home Project
 
 ## Intro
-Welcome! and thank you for taking the time to complete the Classkick take-home challenge for our Senior/Staff Full-Stack Engineer position.
+Welcome! and thank you for taking the time to complete the Classkick take-home challenge for our Senior/Staff Frontend Engineer position.
 
 You will have a week to complete the project and expect to spend < 5 hours on it. Once you have completed your solution, please reply with a link to a forked GitHub repository or your folder with any helpful instructions for us.
 If there's anything that you did not successfully complete, please add notes to your README section about what you could have done and reasoning behind the choices you made
@@ -24,11 +24,12 @@ Your task is to create a [Canvas](https://developer.mozilla.org/en-US/docs/Web/A
 
 
 ## Requirements:
- - Please create a simple backend of your choice to preserve the state
- - It should be clear in your code and/or documentation on areas for eg:
-    - Design/Technical decisions
  - Exhibits SOLID design principles, good application architecture, and project organization.
  - Create components as you feel is best suited for your solution and feel free to use any libraries and explain why you chose those libraries
+ - Your app does NOT have to be hooked up to a backend and thus it does NOT have to preserve state. If you do choose to persist state, or even integrate with a backend, it will be considred a bonus. However, you should still stub out the API calls that you would make to persist state.
+ - It should be clear in your code and/or documentation on areas for eg:
+    - Design/Technical decisions
+    - Mocks/stubs a virtual API that could be injected to persist all actions on the canvas remotely (eg: Firebase)
  - Tests!
 
 Just remember: when in doubt, treat this project as though you are about to submit it to your peers for a PR.
@@ -36,6 +37,7 @@ Just remember: when in doubt, treat this project as though you are about to subm
 ## Bonus:
 - Make it accessible.
 - Make it production ready.
+- Stand up a backend in order to persist state.
 
 ## Styling Guidelines
 
