@@ -3,38 +3,38 @@ import createBase64Cursor from "../utils/createBase64Cursor";
 import createEraserCursorSVG from "../utils/cursors/createEraserCursorSVG";
 import createDrawerCursorSVG from "../utils/cursors/createDrawerCursorSVG";
 import createTextboxCursorSVG from "../utils/cursors/createTextboxCursorSVG";
+import { useCanvasStore } from "../store/canvasStore";
 
 const useCanvas = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const [isDrawing, setIsDrawing] = useState(false);
 
-  const [color, setColor] = useState("black");
-  const [size, setSize] = useState(5);
-
-  const [toolSelected, setToolSelected] = useState("drawer");
-
-  const [text, setText] = useState("");
-  const [cursorPosition, setCursorPosition] = useState<{
-    x: number;
-    y: number;
-  } | null>(null);
-
-  const [history, setHistory] = useState<string[]>([]);
-  const [historyIndex, setHistoryIndex] = useState(-1);
+  const {
+    color,
+    size,
+    toolSelected,
+    text,
+    cursorPosition,
+    history,
+    historyIndex,
+    setColor,
+    setSize,
+    setToolSelected,
+    setText,
+    setCursorPosition,
+    setHistoryIndex,
+    addToHistory,
+    clearHistory,
+  } = useCanvasStore();
 
   const saveState = useCallback(() => {
     const canvas = canvasRef.current;
     if (canvas) {
       const dataURL = canvas.toDataURL();
-      setHistory((prevHistory) => {
-        const newHistory = prevHistory.slice(0, historyIndex + 1);
-        newHistory.push(dataURL);
-        return newHistory;
-      });
-      setHistoryIndex((prevIndex) => prevIndex + 1);
+      addToHistory(dataURL);
     }
-  }, [historyIndex]);
+  }, [addToHistory]);
 
   const draw = useCallback(
     (event: MouseEvent) => {
@@ -86,12 +86,11 @@ const useCanvas = () => {
 
   const handleEraser = () => {
     setToolSelected("eraser");
-    setColor("black"); // Restablecer el color cuando se activa el borrador
+    setColor("black");
   };
 
   const handleTextbox = () => {
     setToolSelected("textbox");
-    setColor("black"); // Restablecer el color cuando se activa el borrador
   };
 
   const handleColorChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -123,7 +122,7 @@ const useCanvas = () => {
         }
       }
     },
-    [toolSelected]
+    [toolSelected, setCursorPosition]
   );
 
   const drawText = useCallback(() => {
@@ -143,7 +142,15 @@ const useCanvas = () => {
         }
       }
     }
-  }, [cursorPosition, color, size, text, saveState]);
+  }, [
+    cursorPosition,
+    color,
+    size,
+    text,
+    saveState,
+    setCursorPosition,
+    setText,
+  ]);
 
   const undo = () => {
     if (historyIndex === 0) clearCanvas();
@@ -172,8 +179,7 @@ const useCanvas = () => {
       const context = canvas.getContext("2d");
       if (context) {
         context.clearRect(0, 0, canvas.width, canvas.height);
-        setHistory([]);
-        setHistoryIndex(-1);
+        clearHistory();
       }
     }
   };
@@ -228,7 +234,7 @@ const useCanvas = () => {
 
   useEffect(() => {
     if (cursorPosition) {
-      focusInput(); // Llama a la función para dar foco al campo de entrada
+      focusInput();
     }
   }, [cursorPosition, focusInput]);
 
