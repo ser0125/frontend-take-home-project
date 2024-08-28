@@ -11,7 +11,12 @@
 .controls {
   margin-top: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.settings {
+  display: flex;
+  gap: 10px;
 }
 
 .controls label {
@@ -23,7 +28,16 @@
   margin-left: 10px;
 }
 
+.controls input[type="color"]:disabled {
+  cursor: not-allowed;
+}
+
 .controls input[type="number"] {
   margin-left: 10px;
   width: 60px;
+}
+
+
+.buttonControl {
+  padding: 5px;
 }
