@@ -81,7 +81,7 @@ Zustand is being used as state management tool
 
 The application is deployed on vercel, so you can take a look there:
 
-[https://factory-four-jet.vercel.app/](https://frontend-take-home-project.vercel.app/)
+[https://frontend-take-home-project/](https://frontend-take-home-project.vercel.app/)
 
 
 
