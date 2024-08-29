@@ -53,7 +53,7 @@ describe("CanvasDrawer Component", () => {
     cy.get('[data-testid="undo-button"]').click();
   });
 
-  it.only("should clear the canvas", () => {
+  it("should clear the canvas", () => {
     cy.get('[data-testid="drawer-button"]').click();
     cy.get("canvas")
       .trigger("mousedown", { clientX: 50, clientY: 50 })
