@@ -26,27 +26,52 @@ export default function CanvasDrawer() {
     handleTextChange,
     drawText,
     undo,
-    clearCanvas
+    clearCanvas,
   } = useCanvas();
-
 
   return (
     <div className={styles.container}>
       <div className={styles.controls}>
         <div>
-          <button onClick={handleDrawer} className={`${styles.buttonControl} ${toolSelected === 'drawer' ? styles.activate : ''}`}>
+          <button
+            data-testid="drawer-button"
+            onClick={handleDrawer}
+            className={`${styles.buttonControl} ${
+              toolSelected === "drawer" ? styles.activate : ""
+            }`}
+          >
             <Image src="/pencil.svg" alt="Pencil Logo" width={30} height={30} />
           </button>
-          <button onClick={handleTextbox} className={`${styles.buttonControl} ${toolSelected === 'textbox' ? styles.activate : ''}`}>
+          <button
+            data-testid="textbox-button"
+            onClick={handleTextbox}
+            className={`${styles.buttonControl} ${
+              toolSelected === "textbox" ? styles.activate : ""
+            }`}
+          >
             <Image src="/letter.svg" alt="Letter Logo" width={30} height={30} />
           </button>
-          <button onClick={handleEraser} className={`${styles.buttonControl} ${toolSelected === 'eraser' ? styles.activate : ''}`}>
+          <button
+            data-testid="eraser-button"
+            onClick={handleEraser}
+            className={`${styles.buttonControl} ${
+              toolSelected === "eraser" ? styles.activate : ""
+            }`}
+          >
             <Image src="/eraser.svg" alt="Eraser Logo" width={30} height={30} />
           </button>
-          <button onClick={undo} className={styles.buttonControl}>
+          <button
+            data-testid="undo-button"
+            onClick={undo}
+            className={styles.buttonControl}
+          >
             <Image src="/undo.svg" alt="Undo Logo" width={30} height={30} />
           </button>
-          <button onClick={clearCanvas} className={styles.buttonControl}>
+          <button
+            data-testid="clear-button"
+            onClick={clearCanvas}
+            className={styles.buttonControl}
+          >
             <Image src="/clear.svg" alt="Clear Logo" width={30} height={30} />
           </button>
         </div>
