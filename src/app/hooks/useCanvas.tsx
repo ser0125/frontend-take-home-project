@@ -6,9 +6,9 @@ import createTextboxCursorSVG from "../utils/cursors/createTextboxCursorSVG";
 import { useCanvasStore } from "../store/canvasStore";
 
 const useCanvas = () => {
+  const [isDrawing, setIsDrawing] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  const [isDrawing, setIsDrawing] = useState(false);
 
   const {
     color,
@@ -130,7 +130,7 @@ const useCanvas = () => {
     if (canvas) {
       const context = canvas.getContext("2d");
       if (context) {
-        context.font = `${size * 2}px Arial`; // Puedes ajustar el tamaño y tipo de fuente
+        context.font = `${size * 2}px Arial`;
         context.fillStyle = color;
         context.textAlign = "left";
         context.textBaseline = "top";
