@@ -1,12 +1,5 @@
-import {
-  renderHook,
-  act,
-  fireEvent,
-  render,
-  screen,
-} from "@testing-library/react";
+import { renderHook, act } from "@testing-library/react";
 import useCanvas from "../hooks/useCanvas";
-import CanvasDrawer from "../components/CanvasDrawer/CanvasDrawer";
 import { useCanvasStore } from "../store/canvasStore";
 import React from "react";
 
@@ -18,7 +11,7 @@ describe("useCanvas", () => {
     textAlign: "",
     textBaseline: "",
     fillText: jest.fn(),
-    clearRect: jest.fn()
+    clearRect: jest.fn(),
   };
 
   beforeEach(() => {
@@ -127,7 +120,7 @@ describe("useCanvas", () => {
 
     // Assert
     expect(mockContext.fillText).toHaveBeenCalledWith("Hello", 10, 10);
-    expect(mockContext.font).toBe("20px Arial"); // 10 * 2 = 20
+    expect(mockContext.font).toBe("20px Arial");
     expect(mockContext.fillStyle).toBe("red");
     expect(mockContext.textAlign).toBe("left");
     expect(mockContext.textBaseline).toBe("top");

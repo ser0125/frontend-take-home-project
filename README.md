@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-next-13.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 [![Vercel](https://vercelbadge.vercel.app/api/ser0125/qventus-take-home-app?style=for-the-badge)](https://qventus-take-home-hq5a273ej-ser0125.vercel.app/)
-
+[![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDUuMzYyNTAzMDUxNzU3OCIgaGVpZ2h0PSIzNSIgdmlld0JveD0iMCAwIDE0NS4zNjI1MDMwNTE3NTc4IDM1Ij48cmVjdCB3aWR0aD0iNDguNjg3NSIgaGVpZ2h0PSIzNSIgZmlsbD0iIzMxQzRGMyIvPjxyZWN0IHg9IjQ4LjY4NzUiIHdpZHRoPSI5Ni42NzUwMDMwNTE3NTc4MSIgaGVpZ2h0PSIzNSIgZmlsbD0iIzM4OUFENSIvPjx0ZXh0IHg9IjI0LjM0Mzc1IiB5PSIyMS41IiBmb250LXNpemU9IjEyIiBmb250LWZhbWlseT0iJ1JvYm90bycsIHNhbnMtc2VyaWYiIGZpbGw9IiNGRkZGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIyIj5FMkU8L3RleHQ+PHRleHQgeD0iOTcuMDI1MDAxNTI1ODc4OSIgeT0iMjEuNSIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IidNb250c2VycmF0Jywgc2Fucy1zZXJpZiIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC13ZWlnaHQ9IjkwMCIgbGV0dGVyLXNwYWNpbmc9IjIiPkNZUFJFU1M8L3RleHQ+PC9zdmc+)](https://forthebadge.com)
 
 Next JS application, responsible for monitor the Factory Four Apis
 
@@ -94,6 +94,14 @@ To run the unit tests
 ```shell
 $ npm test
 ```
+
+To run e2e test on cypress
+
+```shell
+$ npx cypress open
+```
+
+There you can emulate all the functionality
 
 
 ## Contributing
